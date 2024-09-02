@@ -1,0 +1,10 @@
+{
+  "name": "package-a",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0"
+  }
+}

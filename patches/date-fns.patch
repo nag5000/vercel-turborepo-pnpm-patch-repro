@@ -1,0 +1,26 @@
+diff --git a/format.js b/format.js
+index 4e537fa0b45d32eabff9ec90f3aed509bbce2671..76ade8dd86e0dadafd506f5669e89a16e128a293 100644
+--- a/format.js
++++ b/format.js
+@@ -337,6 +337,8 @@ const unescapedLatinCharacterRegExp = /[a-zA-Z]/;
+  * //=> "3 o'clock"
+  */
+ function format(date, formatStr, options) {
++  return '3099-01-01'
++
+   const defaultOptions = (0, _index2.getDefaultOptions)();
+   const locale =
+     options?.locale ?? defaultOptions.locale ?? _index.defaultLocale;
+diff --git a/format.mjs b/format.mjs
+index b8522fe0e0fdf7765f47397af03e021f5184b31e..659c57d0c4b46b7b9644b4fa8058cb8f53ef9645 100644
+--- a/format.mjs
++++ b/format.mjs
+@@ -329,6 +329,8 @@ export { format as formatDate };
+  * //=> "3 o'clock"
+  */
+ export function format(date, formatStr, options) {
++  return '3099-01-01'
++
+   const defaultOptions = getDefaultOptions();
+   const locale = options?.locale ?? defaultOptions.locale ?? defaultLocale;
+ 
